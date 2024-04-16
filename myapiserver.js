@@ -1,7 +1,3 @@
-const express = require('express');
-const app = express();
-const port = 3000;
-
 const emojipedia = [
     {
         id: 1,
@@ -41,18 +37,20 @@ const emojipedia = [
     }
 ];
 
-app.get('/emojipedia', (req, res) => {
-    res.json(emojipedia);
-});
+console.log(emojipedia);
 
-app.get('/emojipedia/:id', (req, res) => {
-    const emoji = emojipedia.find(e => e.id === parseInt(req.params.id));
-    if (!emoji) {
-        return res.status(404).json({ message: 'Emoji not found' });
-    }
-    res.json(emoji);
-});
+// app.get('/emojipedia', (req, res) => {
+//     res.json(emojipedia);
+// });
 
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
+// app.get('/emojipedia/:id', (req, res) => {
+//     const emoji = emojipedia.find(e => e.id === parseInt(req.params.id));
+//     if (!emoji) {
+//         return res.status(404).json({ message: 'Emoji not found' });
+//     }
+//     res.json(emoji);
+// });
+
+// app.listen(port, () => {
+//     console.log(`Server running at http://localhost:${port}`);
+// });
