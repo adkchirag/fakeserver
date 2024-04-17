@@ -1,3 +1,5 @@
+{
+    "emojipedia" : [
     {
         id: 1,
         emoji: "💪",
@@ -34,3 +36,4 @@
         name: "Smiling Face with Hearts",
         meaning: "Feeling affectionate or loving, often used to express adoration or gratitude."
     }
+]}
